@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/login-style.css">
+    <title>AN TOAN BAO MAT HE THONG THONG TIN</title>
+</head>
+<body>
+
+
+<h2>ĐỒ ÁN LÍ THUYẾT BỘ MÔN AN TOÀN BẢO MẬT HỆ THỐNG THÔNG TIN</h2>
+<p1>
+<h4>NHÓM THỰC HIỆN: ADEPT</h4>
+<b>Thành Viên:</b></br>
+1. 1413404: Thái Quỳnh Nhi</br>
+2. 1412105: Ngô Tiến Dũng</br>
+3. 1412114: Huỳnh Quang Dự</br>
+</p1></br>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
